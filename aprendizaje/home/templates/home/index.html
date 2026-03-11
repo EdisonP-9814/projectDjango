@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda de Videojuegos</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script src="{% static 'js/scripts.js' %}"></script>
+</head>
+<body>
+    <h1>Bienvenido a la tienda de videojuegos</h1>
+    <p>explora nuestro catalogo y disfruta.</p>
+    <img src="{% static 'img/logo.jpg' %}" alt="Imagen de videojuegos">
+
+    <footer>
+        <p>2026 Tienda de VideoJuegos</p>
+        <a href="{% url 'contacto' %}">Contactos</a>
+    </footer>
+</body>
+</html> 
