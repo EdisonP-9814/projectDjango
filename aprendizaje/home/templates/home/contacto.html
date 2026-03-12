@@ -1,15 +1,15 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Contacto Tienda de Videojuegos</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <script src="{% static 'js/scripts.js' %}"></script>
-</head>
-<body>
-    <h1>Contacto</h1>
-    <p>¿Tienes alguna pregunta? ¡Contáctanos!</p>
-    <a href="{% url 'index' %}">Volver al inicio</a>
-</body>
-</html>
+
+{% block title %}Contacto - Tienda de Videojuegos{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-body">Contacto</h1>
+    <p class="text-body">Envia un correo a <a href="mailto:contacto@tiendavideojuegos.com" class="text-body">contacto@videojuegos.com</a></p>
+
+    <div class="alert alert-primary">Estamos disponibles de lunes a viernes de 9:00 a 18:00 horas.</div>
+    <div class="alert alert-warning">El tiempo de respuesta puede variar según la carga de solicitudes.</div>
+    <div class="alert alert-danger">Para consultas urgentes, por favor llámanos al +123 456 7890.</div>
+</div>
+{% endblock %}
